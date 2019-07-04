@@ -87,6 +87,7 @@ If you have any question, please submit comment in my [BLOG](http://blog.buaa.us
 If you have any question, please submit comment in my [BLOG](http://blog.buaa.us/) or mention me on [Weibo](http://weibo.com/819880808), [twitter](https://twitter.com/buaazp).  
 
 #### https://freeman983.iteye.com/blog/1965194
+some errors in last link url
 
 ### download before compile 
 wget http://www.openssl.org/source/openssl-1.0.1e.tar.gz 
@@ -97,7 +98,7 @@ wget https://sourceforge.net/projects/imagemagick/files/im7-src/ImageMagick-7.0.
 mv download ImageMagick-7.0.7-25.tar.gz
 
 ### compile 
-yum -y install libjpeg libjpeg-devel libpng libpng-devel gcc gcc-c++ zip
+yum -y install libtool libjpeg libjpeg-devel libpng libpng-devel gcc gcc-c++ zip perl-Pod-Checker libevent libevent-devel memcached
 tar zxvf  openssl-1.0.1e.tar.gz;cd openssl-1.0.1e;./config shared --prefix=/usr --openssldir=/usr/ssl;make && make install;cd ..
 tar zxvf libevent-2.1.10-stable.tar.gz;cd libevent-2.1.10-stable;./configure --prefix=/usr;make && make install;cd ..
 tar zxvf cmake-2.8.10.2.tar.gz;cd cmake-2.8.10.2;./bootstrap --prefix=/usr;make && make install;cd ..
@@ -109,3 +110,4 @@ tar zxvf libmemcached-0.42.tar.gz;cd libmemcached-0.42;./configure --with-jp2=ye
 wget  https://github.com/buaazp/zimg/archive/master.zip -O zimg.zip
 unzip zimg.zip 
 cd zimg-master
+make
