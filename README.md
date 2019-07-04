@@ -86,6 +86,8 @@ Technical issues are also welcomed to be submitted on [GitHub Issues](https://gi
 If you have any question, please submit comment in my [BLOG](http://blog.buaa.us/) or mention me on [Weibo](http://weibo.com/819880808), [twitter](https://twitter.com/buaazp).  sour
 If you have any question, please submit comment in my [BLOG](http://blog.buaa.us/) or mention me on [Weibo](http://weibo.com/819880808), [twitter](https://twitter.com/buaazp).  
 
+#### https://freeman983.iteye.com/blog/1965194
+
 ### download before compile 
 wget http://www.openssl.org/source/openssl-1.0.1e.tar.gz 
 wget https://github.com/libevent/libevent/releases/download/release-2.1.10-stable/libevent-2.1.10-stable.tar.gz
