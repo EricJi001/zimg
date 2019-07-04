@@ -83,4 +83,27 @@ All versions on [Github](https://github.com/buaazp/zimg/releases).
 If you have any question, please submit comment in my [BLOG](http://blog.buaa.us/) or mention me on [Weibo](http://weibo.com/819880808), [twitter](https://twitter.com/buaazp).  
 Technical issues are also welcomed to be submitted on [GitHub Issues](https://github.com/buaazp/zimg/issues).
 
+If you have any question, please submit comment in my [BLOG](http://blog.buaa.us/) or mention me on [Weibo](http://weibo.com/819880808), [twitter](https://twitter.com/buaazp).  sour
+If you have any question, please submit comment in my [BLOG](http://blog.buaa.us/) or mention me on [Weibo](http://weibo.com/819880808), [twitter](https://twitter.com/buaazp).  
 
+### download before compile 
+wget http://www.openssl.org/source/openssl-1.0.1e.tar.gz 
+wget https://github.com/libevent/libevent/releases/download/release-2.1.10-stable/libevent-2.1.10-stable.tar.gz
+wget http://download.tangent.org/libmemcached-0.42.tar.gz
+wget http://www.cmake.org/files/v2.8/cmake-2.8.10.2.tar.gz
+wget https://sourceforge.net/projects/imagemagick/files/im7-src/ImageMagick-7.0.7-25.tar.gz/download
+mv download ImageMagick-7.0.7-25.tar.gz
+
+### compile 
+yum -y install libjpeg libjpeg-devel libpng libpng-devel gcc gcc-c++ zip
+tar zxvf  openssl-1.0.1e.tar.gz;cd openssl-1.0.1e;./config shared --prefix=/usr --openssldir=/usr/ssl;make && make install;cd ..
+tar zxvf libevent-2.1.10-stable.tar.gz;cd libevent-2.1.10-stable;./configure --prefix=/usr;make && make install;cd ..
+tar zxvf cmake-2.8.10.2.tar.gz;cd cmake-2.8.10.2;./bootstrap --prefix=/usr;make && make install;cd ..
+tar zxvf libevhtp-1.2.6.tar.gz;cd libevhtp-1.2.6;cmake -DCMAKE_PREFIX_PATH=/usr -DCMAKE_INSTALL_PREFIX=/usr -DLIBEVENT_OPENSSL_LIBRARY=/usr/lib/openssl;make && make install;cd ..
+tar zxvf ImageMagick-7.0.7-25.tar.gz;cd ImageMagick-7.0.7-25;./configure  --with-perl ;make && make install;cd ..
+tar zxvf libmemcached-0.42.tar.gz;cd libmemcached-0.42;./configure --with-jp2=yes --with-png=yes --with-jpeg=yes LDFLAGS='-L/usr/lib';make && make install;cd ..
+
+### download and compile zimg
+wget  https://github.com/buaazp/zimg/archive/master.zip -O zimg.zip
+unzip zimg.zip 
+cd zimg-master
